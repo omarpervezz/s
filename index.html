@@ -1,0 +1,75 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<link rel="stylesheet" href="./src/css/jquery-bg-slideshow.css">
+<script src="./src/js/jquery-bg-slideshow.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".bg").bgSlideShow({
+			current : 0,
+			randomize : false,
+			images : [ "https://source.unsplash.com/1KSBnTvMahY/1920x1680", "https://source.unsplash.com/xQYukXBXUds/1920x1680", "https://source.unsplash.com/xOjYOOXwDOc/1920x1680" ],
+			initialBackground : 'https://www.jqueryscript.net/dummy/4.jpg',
+			transitionDelay:2000
+		});
+	});
+</script>
+<style type="text/css">
+body {
+  text-align: center;
+  height: 100%;
+  background-color: white;
+  color: white;
+  font-size: 30pt;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0;
+}
+
+.jquery-bg-slideshow-wrap-bg-element {
+  width: 100%;
+  height: 100%;
+}
+
+.bg {
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  color: white;
+  font-size: 30pt;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  text-shadow: 1px 1px 10px black;
+  margin: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+</style>
+
+<title>Tiny Background Slideshow Example</title>
+</head>
+<body>
+	<div class="bg"><h1>Tiny Background Slideshow</h1></div>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>
